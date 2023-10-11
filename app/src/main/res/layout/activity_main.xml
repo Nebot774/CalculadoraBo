@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textoCalculo"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/boto4"
+        app:layout_constraintEnd_toStartOf="@+id/boto2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoCalculo" />
+
+    <Button
+        android:id="@+id/boto2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/boto5"
+        app:layout_constraintEnd_toStartOf="@+id/boto3"
+        app:layout_constraintStart_toEndOf="@+id/boton1"
+        app:layout_constraintTop_toBottomOf="@+id/textoCalculo" />
+
+    <Button
+        android:id="@+id/boto3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/boto6"
+        app:layout_constraintEnd_toStartOf="@+id/botoSuma"
+        app:layout_constraintStart_toEndOf="@id/boto2"
+        app:layout_constraintTop_toBottomOf="@+id/textoCalculo" />
+
+    <Button
+        android:id="@+id/botoSuma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/botoIgual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/boto3"
+        app:layout_constraintTop_toBottomOf="@+id/textoCalculo" />
+
+    <Button
+        android:id="@+id/boto4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/boto7"
+        app:layout_constraintEnd_toStartOf="@+id/boto5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton1" />
+
+    <Button
+        android:id="@+id/boto5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/boto8"
+        app:layout_constraintEnd_toStartOf="@+id/boto6"
+        app:layout_constraintStart_toEndOf="@id/boto4"
+        app:layout_constraintTop_toBottomOf="@+id/boto2" />
+
+    <Button
+        android:id="@+id/boto6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/boto9"
+        app:layout_constraintEnd_toStartOf="@+id/botoIgual"
+        app:layout_constraintStart_toEndOf="@id/boto5"
+        app:layout_constraintTop_toBottomOf="@+id/boto3" />
+
+    <Button
+        android:id="@+id/boto7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/boto0"
+        app:layout_constraintEnd_toStartOf="@+id/boto8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boto4" />
+
+    <Button
+        android:id="@+id/boto8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/boto0"
+        app:layout_constraintEnd_toStartOf="@+id/boto9"
+        app:layout_constraintStart_toEndOf="@id/boto7"
+        app:layout_constraintTop_toBottomOf="@+id/boto5" />
+
+    <Button
+        android:id="@+id/boto9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/boto0"
+        app:layout_constraintEnd_toStartOf="@+id/botoCReset"
+        app:layout_constraintStart_toEndOf="@id/boto8"
+        app:layout_constraintTop_toBottomOf="@+id/boto6" />
+
+    <Button
+        android:id="@+id/botoCReset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="@+id/boto0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/boto9"
+        app:layout_constraintTop_toBottomOf="@+id/botoIgual" />
+
+    <Button
+        android:id="@+id/boto0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/botoCReset"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boto8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botoIgual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="="
+        app:layout_constraintBottom_toTopOf="@+id/botoCReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/boto6"
+        app:layout_constraintTop_toBottomOf="@+id/botoSuma" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
